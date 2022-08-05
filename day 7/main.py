@@ -18,8 +18,6 @@ for char in range(0, len(word_random)):
 
 while not end_game:
     guess = input("Guess a letter: ").lower()
-    
-    
     for position in range(0, len(word_random)):
         letter = word_random[position]
         if letter == guess:
