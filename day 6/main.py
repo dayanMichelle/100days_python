@@ -1,3 +1,4 @@
+# pylint: disable=invalid-name
 # Write a program that prompts for a password (the password text is not important) and prompts again until both passwords match, with a limit of three prompts.
 
 password = input("Type a new password: ")
@@ -12,3 +13,4 @@ while count < 3:
     else:
         print("Register successfully")
         count = 4
+        

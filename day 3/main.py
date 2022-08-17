@@ -1,3 +1,4 @@
+# pylint: disable=anomalous-backslash-in-string
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -21,7 +22,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.") 
+print("Your mission is to find the treasure.")
 
 # https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 direction = input('You\'re at a crossroad. Where do you want to go? Type "left" or "right" ')
@@ -39,5 +40,6 @@ if direction == "left":
             print("Game over")
     else:
         print("Game Over")
-else: 
+else:
     print("Game Over")
+    

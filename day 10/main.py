@@ -1,23 +1,39 @@
+# pylint: disable=unused-variable
 from os import system,name
 from art import logo
 def clear():
+    '''
+    Fuction to clear the console
+    '''
     if name == "nt":
         _=system("cls")
     else:
         _=system("clear")
 # Calculator
 #Add
-def add(n1,n2):
-    return n1 + n2
+def add(n_1,n_2):
+    '''
+    Add two numbers
+    '''
+    return n_1 + n_2
 #Subtract
-def subtract(n1,n2):
-    return n1 - n2
+def subtract(n_1,n_2):
+    '''
+    Substract two numbers
+    '''
+    return n_1 - n_2
 #Multiply
-def multiply(n1,n2):
-    return n1 * n2
+def multiply(n_1,n_2):
+    '''
+    Multiply two numbers
+    '''
+    return n_1 * n_2
 #Divide
-def divide(n1,n2):
-    return n1 / n2
+def divide(n_1,n_2):
+    '''
+    Divide two numbers
+    '''
+    return n_1 / n_2
 
 # directorio
 operations = {
@@ -28,6 +44,9 @@ operations = {
 }
 
 def calculator():
+    '''
+    Return the total
+    '''
     print(logo)
     num1 = float(input("What is the first number?: "))
 

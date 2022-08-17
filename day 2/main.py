@@ -12,6 +12,6 @@ porcentage = float(tip) / 100
 tip_money = float(total) * porcentage
 total_bill = float(total) + float(tip_money)
 
-final_amount = total_bill / int(people)
-final_amount = "{:.2f}".format(final_amount)
-print(f"Each person must pay: ${final_amount} ")
+FINAL_AMOUNT = total_bill / int(people)
+FINAL_AMOUNT = "{:.2f}".format(FINAL_AMOUNT)
+print(f"Each person must pay: ${FINAL_AMOUNT} ")

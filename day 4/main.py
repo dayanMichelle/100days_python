@@ -1,5 +1,6 @@
+# pylint: disable=missing-module-docstring
 import random
-rock = '''
+ROCK = '''
     _______
 ---'   ____)
       (_____)
@@ -8,7 +9,7 @@ rock = '''
 ---.__(___)
 '''
 
-paper = '''
+PAPER = '''
     _______
 ---'   ____)____
           ______)
@@ -17,7 +18,7 @@ paper = '''
 ---.__________)
 '''
 
-scissors = '''
+SCISSORS = '''
     _______
 ---'   ____)____
           ______)
@@ -26,8 +27,8 @@ scissors = '''
 ---.__(___)
 '''
 
-game_images = [rock,paper, scissors]
-user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n "))
+game_images = [ROCK,PAPER, SCISSORS]
+user_choice = int(input("What do you choose? Type 0 for ROCK, 1 for PAPER or 2 for SCISSORS.\n "))
 
 computer_choice = random.randint(0,2)
 
@@ -38,7 +39,7 @@ else:
     print("Computer chose:")
     print(game_images[computer_choice])
     if user_choice == 0 and computer_choice == 2:
-        print("You wins")  
+        print("You wins")
     elif computer_choice > user_choice:
         print("You lose!")
     elif computer_choice == 0 and user_choice==2:
