@@ -69,13 +69,13 @@ def winner(computer_player,user_player):
             Your play: {user_player}
             You Lose
             ''')
-    elif user_counter > 20:
+    elif user_counter > 21:
         return print(f'''
             Play computer: {computer_player} 
             Your play: {user_player}
             You Lose
             ''')
-    elif computer_counter > 20:
+    elif computer_counter > 21:
         return print(f'''
             Play computer: {computer_player} 
             Your play: {user_player}
@@ -108,11 +108,14 @@ def play_game():
                 add_value = random.choice(cards)
                 user_player.append(add_value)
                 print(user_player)
+                count_user = count(user_player)
                 if count_user >= 21:
                     winner(computer_player,user_player)
             else:
                 is_hit = False
                 winner(computer_player,user_player)
+            
+            
 
 play_game()
 
