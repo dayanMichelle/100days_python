@@ -1,9 +1,11 @@
 from art import logo,win,lose
 import random
 
-
 print(logo)
 def play_game():
+  '''
+  Start the game
+  '''
   number = random.randint(0,100)
   lives = 0
   print("I'm thinking of a number between 1 and 100.")
@@ -15,7 +17,7 @@ def play_game():
   elif dificult == 'hard':
     lives = 5
   else:
-    return print("It's no a opnion.")
+    return print("It's no a option.")
 
   while continue_game:
     guess = int(input("Make a guess:"))
