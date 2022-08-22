@@ -80,9 +80,11 @@ while need_drink:
     if drink_selected == "report":
         clear()
         print(LOGO)
-        for k, v in resources.items():
-            print(f"{k}: {v}")
+        print(f"Water: {resources['water']}ml")
+        print(f"Milk: {resources['milk']}ml")
+        print(f"Coffee: {resources['coffee']}gr")
         print(f"Money: ${coins_total}")
+
 
     else:
 
