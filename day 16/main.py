@@ -18,4 +18,3 @@ while is_on:
         order = menu.find_drink(choice)
         if order and make_coffee.is_resource_sufficient(order) and money.make_payment(order.cost):
             make_coffee.make_coffee(order)
-            
