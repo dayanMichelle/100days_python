@@ -1,6 +1,5 @@
 import turtle
 import random
-import colorgram
 
 timmy = turtle.Turtle()
 timmy.color("#EC7272", "#F7A76C")
