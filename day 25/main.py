@@ -26,10 +26,8 @@ while game_on:
     answer_state = screen.textinput(title=f"{len(checked_states)}/{len(data)} Guess the State", prompt="What's another state's name?").title()
     if answer_state == "Exit":
         missing_states = []
-        for state in data.state.to_list():
-
-            if state not in checked_states:
-                missing_states.append(state)
+        missing_states = [state for state in data.state.to_list() if state not in checked_states]
+        print(missing_states)
         new_data = pandas.DataFrame(missing_states)
         new_data.to_csv("states_to_learn.csv")
         break
