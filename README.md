@@ -3,7 +3,7 @@
 #Projects
 
 Snake Game: 🐍
-[![Alt text]](https://youtu.be/G3hGlWCPSZU)
+[![Alt text]("./snake.png")](https://youtu.be/G3hGlWCPSZU)
 
 Pong Game: 🏓
 [![Alt text]](https://youtu.be/LzTrDZeXGeY)
