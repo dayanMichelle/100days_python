@@ -1,6 +1,7 @@
 ### 100days_python
 
 # Projects 💻
+#### Click on the image and see the magic ✨
 
 Snake Game: 🐍
 [![Click me](./images/snake.png)](https://youtu.be/G3hGlWCPSZU)
